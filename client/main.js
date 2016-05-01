@@ -6,6 +6,7 @@ import './main.html';
 Todos = new Mongo.Collection('todos'); 
 
 if (Meteor.isClient){
+  Meteor.subscribe('todos'); 
   // template helpers
 
   Template.main.helpers({
